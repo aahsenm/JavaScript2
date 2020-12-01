@@ -11,8 +11,14 @@
 
  */
 
+
+let timeInterval = setInterval(displayCurrentTime, 1000);
+
 function displayCurrentTime() {
-  // your code goes in here
+  let date = new Date();
+  let localeTime = date.toLocaleTimeString();
+  document.getElementById("time").innerHTML = localeTime; 
 }
 
-setInterval(displayCurrentTime, 1000);
+displayCurrentTime();
+
