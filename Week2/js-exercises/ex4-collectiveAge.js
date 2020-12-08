@@ -9,7 +9,11 @@
  */
 
 function collectiveAge(people) {
-  // return the sum of age for all the people
+  const averageAge = people.map(people => people.age);
+  
+  const addAges = averageAge.reduce((a, b) => a + b, 0);
+  
+  return addAges;
 }
 
 const hackYourFutureMembers = [{
