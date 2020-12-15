@@ -30,6 +30,14 @@ function checkSolution(array) {
 const letters = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c', 'b'];
 removeDuplicates(letters);
 
+function removeDuplicates (array) {
+  array=[... new Set(array)];
+  console.log(array);
+}
+
+removeDuplicates(letters);
+
+
 if (checkSolution(letters)) {
   console.log("Hooray!");
 }
