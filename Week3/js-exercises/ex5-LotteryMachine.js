@@ -26,10 +26,33 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
 
 */
 
+'use strict';
+
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
   // make array
+  for (const i = startIndex; i<= stopIndex; i++){
+    numbers.push(i);
+  }
+  console.log(numbers);
   // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+  numbers.some(function (check) {
+    if(check % 3 === 0) {
+      threeCallback();
+    }
+    if (check % 5 === 0) {
+      fiveCallback();
+    } else if (check % 3 === 0 && check % 5 === 0) {
+      threeCallback();
+      fiveCallback();
+    }
+  })
+}
+const sayThree = () => {
+  console.log('sayThree');
+}
+const sayFive = () => {
+  console.log('sayFive');
 }
 
 threeFive(10, 15, sayThree, sayFive);
