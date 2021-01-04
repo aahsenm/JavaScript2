@@ -24,6 +24,4 @@ function hijackGoogleLogo() {
 
 hijackGoogleLogo();
 
-}
-
-hijackGoogleLogo();
+// I fixed the error and the second function.
