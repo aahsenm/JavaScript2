@@ -31,7 +31,7 @@ Don't you just love the thrill of the lottery? What if I told you we can make ou
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
   const numbers = [];
   // make array
-  for (const i = startIndex; i<= stopIndex; i++){
+  for (let i = startIndex; i<= stopIndex; i++){
     numbers.push(i);
   }
   console.log(numbers);
@@ -42,6 +42,8 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
     }
     if (check % 5 === 0) {
       fiveCallback();
+      // You said that, the else statement is unreachable. After changing const to let, it worked.
+      // Is it ok for now?
     } else if (check % 3 === 0 && check % 5 === 0) {
       threeCallback();
       fiveCallback();
