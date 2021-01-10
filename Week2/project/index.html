@@ -4,12 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
   <title>Pomodoro Clock</title>
 </head>
 
 <body>
-  <div id="app">
 
+  <h1>Pomodore Clock</h1>
+  <h3>Session Length</h3>
+
+<!--Area of increment and decrements-->
+  <div class="increment-decrement-container">
+    <button id= "increment" class= "button">&#8593;</button>
+    <p id="lengthOfSession"></p>
+    <button id= "decrement" class= "button">&#8595;</button>
+  </div>
+
+<!--Area of session part-->
+  <div class="session-part"> 
+    <h1>Session</h1> 
+    <div class= "time">
+      <h3 id="minute"></h3>
+      <h3 id="semicolon">:</h3>
+      <h3 id="second"></h3>
+    </div>
+  </div>
+
+<!--Area of play and stop buttons-->
+  <div class="play-stop-buttons">
+    <button id="play" class="button">&#8227;</button>
+    <button id="stop" class="button">&#8214;</button>
   </div>
   <script src="index.js"></script>
 </body>

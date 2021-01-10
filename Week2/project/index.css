@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #23555c;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    margin: auto;
+    width: 50%
+}
+
+.increment-decrement-container{
+    display: flex;
+    margin-left: 320px;
+}
+
+.session-part {
+    border:5px solid rgb(25, 60, 63);
+    border-radius: 20px;
+    height: 200px;
+    margin:auto;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.time {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.button{
+    font-size: 40px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding:10px;
+    cursor: pointer;
+    c
+}
+    
